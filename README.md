@@ -96,7 +96,8 @@ Node.js and Express backend responsible for AI-powered schema generation, runtim
 
 ### AI Integration
 
-- Groq SDK (`llama-3.3-70b-versatile`)
+- Groq API
+- Llama 3.3 70B Versatile
 
 ### Validation & Security
 
