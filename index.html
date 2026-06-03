@@ -39,39 +39,60 @@
       <!-- Hero Section -->
       <header class="hero-band">
         <h1 class="display-xl">Mock API AI</h1>
-        <div class="display-md mb-lg" style="color: var(--body-strong)">
+        <div class="display-md mb-xl" style="color: var(--body-strong)">
           AI-Powered Dynamic Mock API Platform
         </div>
-        <p class="body-lg mb-2xl">
-          Generate, host, and test dynamic REST APIs from natural language prompts with persistent CRUD operations, runtime validation, and an interactive API playground.
-        </p>
-        <div class="flex gap-md" style="flex-wrap: wrap">
+        
+        <div class="mb-2xl flex gap-md items-center code" style="color: var(--mute); flex-wrap: wrap;">
+          <span>AI Schema Generation</span>
+          <span style="color: var(--hairline)">•</span>
+          <span>Dynamic CRUD APIs</span>
+          <span style="color: var(--hairline)">•</span>
+          <span>PostgreSQL Persistence</span>
+          <span style="color: var(--hairline)">•</span>
+          <span>Runtime Validation</span>
+        </div>
+
+        <div class="flex gap-md mb-md" style="flex-wrap: wrap">
           <a
             href="https://mock-api-ai.pages.dev/"
             target="_blank"
             class="button-primary"
-            ><i class="bi bi-rocket-takeoff" style="margin-right: 8px"></i> Launch App</a
+            ><i class="bi bi-rocket-takeoff" style="margin-right: 8px"></i> Open App</a
           >
           <a
-            href="https://github.com/sn0914r/mock-api-ai-system"
+            href="https://site--mock-api-ai-backend--gxd2ltpdfxvn.code.run/health"
             target="_blank"
             class="button-secondary-ghost"
-            ><i class="bi bi-github" style="margin-right: 8px"></i> GitHub</a
+            ><i class="bi bi-link-45deg" style="margin-right: 8px"></i> Backend API</a
           >
         </div>
-        <div class="mt-3xl flex gap-md items-center code" style="color: var(--mute); flex-wrap: wrap;">
-          <span>AI Schema Generation</span>
-          <span style="color: var(--hairline)">|</span>
-          <span>Dynamic CRUD APIs</span>
-          <span style="color: var(--hairline)">|</span>
-          <span>PostgreSQL Persistence</span>
-          <span style="color: var(--hairline)">|</span>
-          <span>Runtime Validation</span>
+        
+        <div class="flex gap-md mb-3xl" style="flex-wrap: wrap">
+
+          <a
+            href="https://github.com/sn0914r/mock-api-ai-frontend"
+            target="_blank"
+            class="button-secondary-ghost"
+            ><i class="bi bi-github" style="margin-right: 8px"></i> Frontend Repo</a
+          >
+          <a
+            href="https://github.com/sn0914r/mock-api-ai-backend"
+            target="_blank"
+            class="button-secondary-ghost"
+            ><i class="bi bi-github" style="margin-right: 8px"></i> Backend Repo</a
+          >
+        </div>
+
+        <div class="mt-xl">
+          <a href="#about" class="body-md flex items-center" style="color: var(--mute); transition: color 0.2s; display: inline-flex;" onmouseover="this.style.color='var(--ink)'" onmouseout="this.style.color='var(--mute)'">
+            <i class="bi bi-arrow-down" style="margin-right: 8px;"></i> Learn More About The Project
+          </a>
         </div>
       </header>
 
       <!-- About Mock-api-ai -->
-      <section class="section">
+      <section class="section" id="about">
         <h2 class="display-md mb-2xl">About Mock-api-ai</h2>
         <p class="body-lg mb-sm">
           Mock API AI is a platform that allows developers to generate mock REST APIs using natural language prompts.
@@ -91,6 +112,151 @@
             <p class="body-sm">
               Handles AI-based schema generation, runtime validation, dynamic CRUD operations, and PostgreSQL data persistence.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Links -->
+      <section class="section">
+        <h2 class="display-md mb-2xl">Project Links</h2>
+        <div class="grid grid-2">
+          <div class="card-content">
+            <h3 class="body-md-strong mb-md">Live Applications</h3>
+            <div class="flex flex-col gap-sm">
+              <a
+                href="https://mock-api-ai.pages.dev/"
+                target="_blank"
+                class="body-md"
+                >↗ Frontend Application</a
+              >
+              <a
+                href="https://site--mock-api-ai-backend--gxd2ltpdfxvn.code.run/health"
+                target="_blank"
+                class="body-md"
+                >↗ API Health</a
+              >
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="body-md-strong mb-md">Repositories</h3>
+            <div class="flex flex-col gap-sm">
+              <a
+                href="https://github.com/sn0914r/mock-api-ai-frontend"
+                target="_blank"
+                class="body-md"
+                >↗ Frontend Repository</a
+              >
+              <a
+                href="https://github.com/sn0914r/mock-api-ai-backend"
+                target="_blank"
+                class="body-md"
+                >↗ Backend Repository</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Developer Use Cases -->
+      <section class="section">
+        <h2 class="display-md mb-2xl">Developer Use Cases</h2>
+        <div class="grid grid-3">
+          <div class="card-content">
+            <h3 class="body-md-strong mb-sm">Frontend Development</h3>
+            <p class="body-sm">
+              Generate realistic APIs for UI development without building a backend first.
+            </p>
+          </div>
+          <div class="card-content">
+            <h3 class="body-md-strong mb-sm">API Prototyping</h3>
+            <p class="body-sm">
+              Quickly create and test API structures during product discovery and development.
+            </p>
+          </div>
+          <div class="card-content">
+            <h3 class="body-md-strong mb-sm">Testing & Learning</h3>
+            <p class="body-sm">
+              Experiment with CRUD operations, request payloads, and API workflows in an isolated environment.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Screenshots -->
+      <section class="section">
+        <h2 class="display-md mb-2xl">Screenshots</h2>
+        <div class="grid grid-3">
+          <div class="screenshot-card">
+            <img
+              src="assets/screenshots/generate-api.png"
+              alt="Generate API"
+            />
+            <div class="body-md-strong text-center">Generate API</div>
+          </div>
+          <div class="screenshot-card">
+            <img
+              src="assets/screenshots/api-playground.png"
+              alt="API Playground"
+            />
+            <div class="body-md-strong text-center">API Playground</div>
+          </div>
+          <div class="screenshot-card">
+            <img
+              src="assets/screenshots/playground-editor.png"
+              alt="Playground Editor"
+            />
+            <div class="body-md-strong text-center">Playground Editor</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="section">
+        <h2 class="display-md mb-2xl">Tech Stack</h2>
+        <div class="grid grid-3">
+          <div class="card-content">
+            <h3 class="body-md-strong mb-sm">Frontend</h3>
+            <div>
+              <span class="badge">React + TypeScript</span><span class="badge">Vite</span
+              ><span class="badge">React Router</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="body-md-strong mb-sm">State Management & Data Fetching</h3>
+            <div>
+              <span class="badge">TanStack Query</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="body-md-strong mb-sm">Forms & Validation</h3>
+            <div>
+              <span class="badge">React Hook Form</span><span class="badge">Zod</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="body-md-strong mb-sm">Backend</h3>
+            <div>
+              <span class="badge">Node.js</span><span class="badge">Express.js</span
+              ><span class="badge">TypeScript</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="body-md-strong mb-sm">Database</h3>
+            <div>
+              <span class="badge">PostgreSQL</span><span class="badge">pg</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="body-md-strong mb-sm">AI Integration</h3>
+            <div>
+              <span class="badge">Groq API</span><span class="badge">Llama 3.3 70B Versatile</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <h3 class="body-md-strong mb-sm">Security</h3>
+            <div>
+              <span class="badge">Helmet</span><span class="badge">CORS</span><span class="badge">Runtime Schema Validation</span>
+            </div>
           </div>
         </div>
       </section>
@@ -178,151 +344,6 @@
         </div>
       </section>
 
-      <!-- Screenshots -->
-      <section class="section">
-        <h2 class="display-md mb-2xl">Screenshots</h2>
-        <div class="grid grid-3">
-          <div class="screenshot-card">
-            <img
-              src="assets/screenshots/generate-api.png"
-              alt="Generate API"
-            />
-            <div class="body-md-strong text-center">Generate API</div>
-          </div>
-          <div class="screenshot-card">
-            <img
-              src="assets/screenshots/api-playground.png"
-              alt="API Playground"
-            />
-            <div class="body-md-strong text-center">API Playground</div>
-          </div>
-          <div class="screenshot-card">
-            <img
-              src="assets/screenshots/playground-editor.png"
-              alt="Playground Editor"
-            />
-            <div class="body-md-strong text-center">Playground Editor</div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Tech Stack -->
-      <section class="section">
-        <h2 class="display-md mb-2xl">Tech Stack</h2>
-        <div class="grid grid-3">
-          <div class="card-content">
-            <h3 class="body-md-strong mb-sm">Frontend</h3>
-            <div>
-              <span class="badge">React + TypeScript</span><span class="badge">Vite</span
-              ><span class="badge">React Router</span>
-            </div>
-          </div>
-          <div class="card-content">
-            <h3 class="body-md-strong mb-sm">State Management & Data Fetching</h3>
-            <div>
-              <span class="badge">TanStack Query</span>
-            </div>
-          </div>
-          <div class="card-content">
-            <h3 class="body-md-strong mb-sm">Forms & Validation</h3>
-            <div>
-              <span class="badge">React Hook Form</span><span class="badge">Zod</span>
-            </div>
-          </div>
-          <div class="card-content">
-            <h3 class="body-md-strong mb-sm">Backend</h3>
-            <div>
-              <span class="badge">Node.js</span><span class="badge">Express.js</span
-              ><span class="badge">TypeScript</span>
-            </div>
-          </div>
-          <div class="card-content">
-            <h3 class="body-md-strong mb-sm">Database</h3>
-            <div>
-              <span class="badge">PostgreSQL</span><span class="badge">pg</span>
-            </div>
-          </div>
-          <div class="card-content">
-            <h3 class="body-md-strong mb-sm">AI Integration</h3>
-            <div>
-              <span class="badge">Groq API</span><span class="badge">Llama 3.3 70B Versatile</span>
-            </div>
-          </div>
-          <div class="card-content">
-            <h3 class="body-md-strong mb-sm">Security</h3>
-            <div>
-              <span class="badge">Helmet</span><span class="badge">CORS</span><span class="badge">Runtime Schema Validation</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Project Links -->
-      <section class="section">
-        <h2 class="display-md mb-2xl">Project Links</h2>
-        <div class="grid grid-2">
-          <div class="card-content">
-            <h3 class="body-md-strong mb-md">Live Applications</h3>
-            <div class="flex flex-col gap-sm">
-              <a
-                href="https://mock-api-ai.pages.dev/"
-                target="_blank"
-                class="body-md"
-                >↗ Frontend Application</a
-              >
-              <a
-                href="https://site--mock-api-ai-backend--gxd2ltpdfxvn.code.run/health"
-                target="_blank"
-                class="body-md"
-                >↗ API Health</a
-              >
-            </div>
-          </div>
-          <div class="card-content">
-            <h3 class="body-md-strong mb-md">Repositories</h3>
-            <div class="flex flex-col gap-sm">
-
-              <a
-                href="https://github.com/sn0914r/mock-api-ai-frontend"
-                target="_blank"
-                class="body-md"
-                >↗ Frontend Repository</a
-              >
-              <a
-                href="https://github.com/sn0914r/mock-api-ai-backend"
-                target="_blank"
-                class="body-md"
-                >↗ Backend Repository</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Developer Use Cases -->
-      <section class="section">
-        <h2 class="display-md mb-2xl">Developer Use Cases</h2>
-        <div class="grid grid-3">
-          <div class="card-content">
-            <h3 class="body-md-strong mb-sm">Frontend Development</h3>
-            <p class="body-sm">
-              Generate realistic APIs for UI development without building a backend first.
-            </p>
-          </div>
-          <div class="card-content">
-            <h3 class="body-md-strong mb-sm">API Prototyping</h3>
-            <p class="body-sm">
-              Quickly create and test API structures during product discovery and development.
-            </p>
-          </div>
-          <div class="card-content">
-            <h3 class="body-md-strong mb-sm">Testing & Learning</h3>
-            <p class="body-sm">
-              Experiment with CRUD operations, request payloads, and API workflows in an isolated environment.
-            </p>
-          </div>
-        </div>
-      </section>
     </div>
 
     <footer>
