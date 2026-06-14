@@ -33,20 +33,38 @@ Node.js and Express backend responsible for AI-powered schema generation, runtim
 
 ## Live Deployments
 
-- **Frontend:** [mock-api-ai.pages.dev](https://mock-api-ai.pages.dev/)
-- **Backend API:** [mock-api-ai-backend](https://site--mock-api-ai-backend--gxd2ltpdfxvn.code.run/health)
+| Service | URL |
+|---|---|
+| Frontend | [mock-api-ai.pages.dev](https://mock-api-ai.pages.dev/) |
+| Backend API | [mock-api-ai-backend](https://site--mock-api-ai-backend--gxd2ltpdfxvn.code.run/health) |
+| API Documentation | [mock-api-ai-backend/docs](https://site--mock-api-ai-backend--gxd2ltpdfxvn.code.run/docs) |
 
 ---
 
-## Core Features
+## Key Features
 
-- Generate mock REST APIs from natural language prompts
-- Dynamic schema and mock data generation using Groq LLM
-- Persistent CRUD operations using PostgreSQL JSONB
-- Interactive API playground for testing endpoints
-- Runtime payload validation for dynamic APIs
-- Syntax-highlighted API responses
-- Dark and light theme support
+### AI API Generation
+- Generate REST APIs from natural language prompts using Groq (Llama 3.3 70B)
+- AI generates schema, routes, and mock seed data in a single request
+- Each API is UUID-isolated — endpoints operate in their own namespace via /api/:apiId/:route
+- API metadata and records persisted in PostgreSQL using JSONB columns
+
+### Dynamic CRUD Operations
+- Full CRUD on any generated API without writing any code
+- Runtime Zod schema validation on POST, PUT, and PATCH — schema is fetched from DB and validated dynamically per request
+- Drizzle ORM for type-safe database operations
+- Centralized error handling with structured responses
+
+### API Playground
+- Test any generated endpoint directly from the dashboard
+- Real-time request body editing with syntax highlighting
+- Copy responses to clipboard
+
+### Security & Reliability
+- UUID-based API isolation prevents cross-API data leakage
+- Runtime payload validation on all mutating operations
+- Secure HTTP headers via Helmet
+- Production error handling without stack trace exposure
 
 ---
 
@@ -93,6 +111,7 @@ Node.js and Express backend responsible for AI-powered schema generation, runtim
 - TypeScript
 - PostgreSQL
 - pg
+- Drizzle ORM
 
 ### AI Integration
 
